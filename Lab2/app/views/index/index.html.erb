@@ -1,0 +1,47 @@
+<h1>Index#index</h1>
+<p>Find me in app/views/index/index.html.erb</p>
+
+<%= link_to("Go to sample",
+    {:controller => 'index',
+    :action => 'sample'} ) %>
+
+<br>
+<br>
+
+<h1>Listing articles</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+    </tr>
+  <% end %>
+  
+</table>
+
+<br>
+<br>
+
+<%= "Print 0 to 10:" %>
+<br>
+<% 11.times do |i| %>
+    <%= i %>
+<% end %>
+
+<br>
+<br>
+
+<%
+if(params.has_key?(:id) && 
+    params.has_key?(:random)) %>
+    <br>
+    <%= "ID: #{params[:id]}" %><br/>
+    <%= "RANDOM: #{params[:random]}" %><br/>
+<%end%>

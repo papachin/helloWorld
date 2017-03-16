@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+    </head>
+    <body>
+        
+        <div class="forms">
+            <h1 style='text-align: center;'>Create Account</h1>
+        
+            <%= render 'form', user: @user %>
+        
+            <div class="signBtn">
+                <%= link_to 'Sign In !', new_login_path %>
+            </div>
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @user.fName %>
+</p>
+
+<p>
+  <strong>Sname:</strong>
+  <%= @user.sName %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
+</p>
+
+<p>
+  <strong>Admin:</strong>
+  <%= @user.admin %>
+</p>
+
+<p>
+  <strong>Activated:</strong>
+  <%= @user.activated %>
+</p>
+
+<% if @user.admin == true %>
+  <%= link_to 'Edit', edit_user_path(@user) %>
+  <br>
+<% end %>
+<%= link_to 'Back', users_path %>
+

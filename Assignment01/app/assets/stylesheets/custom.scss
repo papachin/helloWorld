@@ -1,0 +1,41 @@
+body {
+    background-color: #D3D3D3;
+}
+/* forms */
+.forms {
+    margin: auto;
+    width: 40%;
+    border: 1px solid #73AD21;
+    padding: 15px;
+    background-color: #8FBC8F;
+}
+.names{
+    margin-right: 15px;
+}
+.email{
+    margin-right: 15px;
+}
+.pass{
+    margin-right: 15px;
+}
+.btnCreate{
+  margin: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.signBtn{
+  font-size: 115%;
+  font-family: "Georgia";
+}
+
+input, textarea, select, .uneditable-input {
+    align-content: center;
+    border: 2px solid #bbb;
+    padding: 8px;
+    width: 99%;
+    margin-bottom: 10px;
+}
+
+input {
+  height: auto !important;
+}
